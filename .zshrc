@@ -92,8 +92,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 
 export GOPATH=${HOME}/go
-export GOVERSION=$(brew list go | head -n 1 | cut -d '/' -f 6)
-export GOROOT=$(brew --prefix)/Cellar/go/${GOVERSION}/libexec
 export ANDROID_HOME=/Users/abhi/Library/Android/sdk/
 export PATH=${GOPATH}/bin:$PATH
 export PATH=${HOME}/development/flutter/bin:$PATH
