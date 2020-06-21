@@ -5,7 +5,7 @@ export NVM_DIR="$HOME/.nvm"
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/abhi/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -80,8 +80,8 @@ export BAT_THEME="OneHalfDark"
 
 
 alias loadnvm=". /usr/local/opt/nvm/nvm.sh"
-alias cdprivate="cd /Users/abhilashchelankara/projects/private"
-alias cddocker="cd /Users/abhilashchelankara/projects/docker"
+alias cdprivate="cd ~/projects/private"
+alias cddocker="cd ~/projects/docker"
 alias devpayd="docker-compose up -d && source .env.sh && iex -S mix phx.server"
 alias testpayd="docker-compose -f docker-compose.test.yml up -d && source .env.test.sh && MIX_ENV=test mix test"
 alias serve="mix phx.server"
@@ -105,17 +105,17 @@ alias zshedit="nvim ~/.zshrc && source ~/.zshrc"
 alias nvimedit="nvim ~/.config/nvim/init.vim"
 # alias nvim="~/nvim-osx64/bin/nvim"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH=$PATH:/Users/abhialshchelankara/Library/Android/sdk/platform-tools/
+export PATH=$PATH:~/Library/Android/sdk/platform-tools/
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/abhilashchelakara/.nvm/versions/node/v8.9.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/abhilashchelankara/.nvm/versions/node/v8.9.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+[[ -f ~/.nvm/versions/node/v8.9.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . ~/.nvm/versions/node/v8.9.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/abhialshchelankara/.nvm/versions/node/v8.9.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/abhilashchelankara/.nvm/versions/node/v8.9.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+[[ -f ~/.nvm/versions/node/v8.9.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . ~/.nvm/versions/node/v8.9.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/abhi/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/abhi/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '~/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '~/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/abhi/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/abhi/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '~/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '~/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
